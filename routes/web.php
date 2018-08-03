@@ -15,19 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/Home', function() {
-	return view('Home');
-});
+Route::post('/showform', 'showform@form' );
 
-Route::get('/prod', function() {
-	return view('prod');
-});
-
-Route::get('/contact_us', function(){
-	return view('contact_us');
-});
-
-Route::get('/about_us', function(){
-	return view('about_us');
-});
 
